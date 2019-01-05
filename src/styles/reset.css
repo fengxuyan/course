@@ -1,0 +1,56 @@
+html {
+    overflow-x:auto;
+    overflow-y:scroll;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
+    font-weight:400;
+    margin:0;
+    padding:0;
+}
+
+table {
+    border-collapse:collapse;
+}
+fieldset, img {
+    border:0 none;
+}
+fieldset {
+    margin:0;
+    padding:0;
+}
+
+legend {
+    display:none;
+}
+address, caption, em, strong, th, i {
+    font-style:normal;
+    font-weight:400;
+}
+
+ol, ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+}
+
+
+
+
+.sui-table.table-primary th {
+    background-color: #fff;
+    color: #333;
+    font-weight: normal;
+    border-left: 1px solid #e6e6e6;
+}
+
+.sui-table th, .sui-table td {
+    text-align: center;
+}
+
+.sui-table thead:first-child tr:first-child th {
+    color: #333;
+    font-weight: normal;
+    vertical-align: middle
+
+}
+
