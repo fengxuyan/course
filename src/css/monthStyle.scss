@@ -1,0 +1,53 @@
+.calender-box {
+  border: 1px solid green;
+}
+
+.datepicker table tr td.old, .datepicker table tr td.new {
+  visibility: hidden;
+}
+
+.table-condensed, .datepicker-days, .datepicker-inline {
+  width: 100%;
+  height: 500px;
+}
+
+tbody tr ,tbody td{
+  border: 1px solid #ddd;
+  height: 150px;
+
+
+}
+.day {
+  vertical-align: baseline;
+  /* width: 50px; */
+  padding-left: 10px;
+}
+.datepicker td {
+  text-align: left;
+
+}
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused{
+  background-color: #fff;
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {
+  background-color: #fff;
+  border:0;
+  color: #000;
+  text-shadow:none;
+
+}
+.datepicker table tr td.today {
+  //color: #000;
+}
+.datepicker th.datepicker-switch {
+  //position: fixed;
+}
+.date-header{
+  //position: fixed;
+  width: 250px;
+
+}
+.datepicker-switch{
+  text-align: center;
+}

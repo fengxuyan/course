@@ -90,7 +90,7 @@
             }
         });
 
-        $ax.adaptive.currentViewId = viewId; // we need to set this so the enabled and selected styles will apply properly
+        $ax.adaptive.currentViewId = viewId; // we need to set this so the enabled and selected css will apply properly
         if(previousViewId) {
             $ax.style.clearAdaptiveStyles();
             $('*').removeClass(previousViewId);

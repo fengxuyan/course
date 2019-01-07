@@ -1,3 +1,7 @@
+
+.main_week {
+  padding: 10px;
+}
 .table-box table, .table-box-empty table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -105,5 +109,6 @@ thead {
 }
 
 h4 {
-  display: inline-block
+  display: inline-block;
+  padding-right: 10px;
 }

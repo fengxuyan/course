@@ -267,14 +267,14 @@
     $ax.style.SetWidgetPlaceholder = function(id, value, text, password) {
         var inputId = $ax.repeater.applySuffixToElementId(id, '_input');
 
-        // Right now this is the only style on the widget. If other styles (ex. Rollover), are allowed
+        // Right now this is the only style on the widget. If other css (ex. Rollover), are allowed
         //  on TextBox/TextArea, or Placeholder is applied to more widgets, this may need to do more.
         var obj = $jobj(inputId);
 
         var height = document.getElementById(inputId).style['height'];
         var width = document.getElementById(inputId).style['width'];
         obj.attr('style', '');
-        //removing all styles, but now we can change the size, so we should add them back
+        //removing all css, but now we can change the size, so we should add them back
         //this is more like a quick hack
         if (height) obj.css('height', height);
         if (width) obj.css('width', width);
@@ -518,7 +518,7 @@
     [UP] -- navigate up the heirarchy
 
     ComputeAllOverrides (object):
-    All view styles [DOWN]
+    All view css [DOWN]
     If hyperlink
     - DO ComputeStateStyle for parent object
     - if (MouseOver || MouseDown) 

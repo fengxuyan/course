@@ -609,7 +609,7 @@ $axure.internal(function($ax) {
             };
 
 
-            //attach button shape alternate styles
+            //attach button shape alternate css
             var needsMouseFilter = dObj.type != 'hyperlink' && !$ax.public.fn.IsLayer(dObj.type) && !$ax.public.fn.IsDynamicPanel(dObj.type) && dObj.type != 'richTextPanel' &&
                 !$ax.public.fn.IsRepeater(dObj.type) && !$ax.public.fn.IsCheckBox(dObj.type) && !$ax.public.fn.IsRadioButton(dObj.type) && !$ax.public.fn.IsTreeNodeObject(dObj.type);
             if(needsMouseFilter) {
@@ -693,7 +693,7 @@ $axure.internal(function($ax) {
             };
 
             // Initialize Placeholders. Right now this is text boxes and text areas.
-            // Also, the assuption is being made that these widgets with the placeholder, have no other styles (this may change...)
+            // Also, the assuption is being made that these widgets with the placeholder, have no other css (this may change...)
             var hasPlaceholder = dObj.placeholderText == '' ? true : Boolean(dObj.placeholderText);
             if (($ax.public.fn.IsTextArea(dObj.type) || $ax.public.fn.IsTextBox(dObj.type)) && hasPlaceholder) {
                 // This is needed to initialize the placeholder state
@@ -830,7 +830,7 @@ $axure.internal(function($ax) {
                 }
             }
 
-            // Attach handles for dynamic panels that propagate styles to inner items.
+            // Attach handles for dynamic panels that propagate css to inner items.
             if (($ax.public.fn.IsDynamicPanel(dObj.type) || $ax.public.fn.IsLayer(dObj.type)) && dObj.propagate) {
                 $element.mouseenter(function() {
                     dynamicPanelMouseOver(this.id);
@@ -843,7 +843,7 @@ $axure.internal(function($ax) {
                 });
             }
 
-            // These are the dynamic panel functions for propagating rollover styles and mouse down styles to inner objects
+            // These are the dynamic panel functions for propagating rollover css and mouse down css to inner objects
             var dynamicPanelMouseOver = function(elementId, fromChild) {
                 var parent = $ax.dynamicPanelManager.parentHandlesStyles(elementId);
                 if(parent) {
@@ -894,7 +894,7 @@ $axure.internal(function($ax) {
                 $ax.dynamicPanelManager.propagateMouseDown(elementId, false);
             };
 
-            //attach handlers for button shape and tree node mouse over styles
+            //attach handlers for button shape and tree node mouse over css
             // TODO: Can this really be removed? Trees seem to work with out (the generic hover case works for it).
             //        query.filter(function(obj) {
             //            return $ax.public.fn.IsVector(obj.type) && $ax.public.fn.IsTreeNodeObject(obj.parent.type) &&
@@ -1055,7 +1055,7 @@ $axure.internal(function($ax) {
                 hasMove ? $element : $(), elementId);
 
 
-            //attach link alternate styles
+            //attach link alternate css
             if(dObj.type == 'hyperlink') {
                 $element.mouseenter(function() {
                     var elementId = this.id;
