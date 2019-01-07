@@ -12,343 +12,342 @@
 </head>
 <body>
 
-<div class="search-box">
-    <h4>上课时间:    </h4>
+<div class="main_week">
+    <div class="search-box">
+        <h4>上课时间: </h4>
 
-    <span class="sui-dropdown dropdown-bordered select"><span class="dropdown-inner"><a id="select" role="button"
-                                                                                        href="javascript:void(0);"
-                                                                                        data-toggle="dropdown"
-                                                                                        class="dropdown-toggle">
+        <span class="sui-dropdown dropdown-bordered select"><span class="dropdown-inner"><a id="select" role="button"
+                                                                                            href="javascript:void(0);"
+                                                                                            data-toggle="dropdown"
+                                                                                            class="dropdown-toggle">
       <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span></a>
     <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
       <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="01">第一周</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="02">第二周</a></li>
     </ul></span></span>
-    <button class="sui-btn btn-large btn-primary this-week">本周</button>
-    <button class="sui-btn btn-large btn-primary next-week">下周</button>
-    <button class="sui-btn btn-large btn-danger delete-btn">删除当前周排课</button>
+        <button class="sui-btn btn-large btn-primary this-week">本周</button>
+        <button class="sui-btn btn-large btn-primary next-week">下周</button>
+        <button class="sui-btn btn-large btn-danger delete-btn">删除当前周排课</button>
 
 
-</div>
+    </div>
 
-<!--没有排课记录-->
-<div class="table-box-empty sui-row-fluid">
+    <!--没有排课记录-->
+    <div class="table-box-empty sui-row-fluid">
 
-    <table class="sui-table">
-        <thead>
-        <tr class="weekDayNames">
-            <th rowspan="2" style="background: #D7D7D7;">时间</th>
-            <th colspan="5">星期一(12.31)</th>
-            <th colspan="5">星期二(01.01)</th>
-            <th colspan="5">星期三(01.02)</th>
-            <th colspan="5">星期四(01.03)</th>
-            <th colspan="5">星期五(01.04)</th>
-            <th colspan="5">星期六(01.05)</th>
-            <th colspan="5">星期日(01.06)</th>
-        </tr>
-        <tr class="classNum">
-            <td>教室1</td>
-            <td>教室11</td>
-            <td>教室111</td>
-            <td>教室11111</td>
-            <td>教室111111</td>
+        <table class="sui-table">
+            <thead>
+            <tr class="weekDayNames">
+                <th rowspan="2" style="background: #D7D7D7;">时间</th>
+                <th colspan="5">星期一(12.31)</th>
+                <th colspan="5">星期二(01.01)</th>
+                <th colspan="5">星期三(01.02)</th>
+                <th colspan="5">星期四(01.03)</th>
+                <th colspan="5">星期五(01.04)</th>
+                <th colspan="5">星期六(01.05)</th>
+                <th colspan="5">星期日(01.06)</th>
+            </tr>
+            <tr class="classNum">
+                <td>教室1</td>
+                <td>教室11</td>
+                <td>教室111</td>
+                <td>教室11111</td>
+                <td>教室111111</td>
 
-            <td>教室2</td>
-            <td>教室22</td>
-            <td>教室222</td>
-            <td>教室2222</td>
-            <td>教室22222</td>
+                <td>教室2</td>
+                <td>教室22</td>
+                <td>教室222</td>
+                <td>教室2222</td>
+                <td>教室22222</td>
 
-            <td>教室3</td>
-            <td>教室33</td>
-            <td>教室333</td>
-            <td>教室3333</td>
-            <td>教室33333</td>
+                <td>教室3</td>
+                <td>教室33</td>
+                <td>教室333</td>
+                <td>教室3333</td>
+                <td>教室33333</td>
 
-            <td>教室4</td>
-            <td>教室44</td>
-            <td>教室444</td>
-            <td>教室4444</td>
-            <td>教室44444</td>
+                <td>教室4</td>
+                <td>教室44</td>
+                <td>教室444</td>
+                <td>教室4444</td>
+                <td>教室44444</td>
 
 
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
-            <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
 
-        </tr>
+            </tr>
 
-        </thead>
-        <tbody class="box">
-        <tr>
-            <td>
-                <i class="delete-time sui-icon icon-tb-close"></i>
+            </thead>
 
-                <input class="chooseTime" type="text" value="09:00">-
-                <input class="chooseTime" type="text" value="10:00">
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
 
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <tbody class="box">
+            <tr id="timeboxid_1">
+                <td>
+                    <i class="delete-time sui-icon icon-tb-close"></i>
 
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
+                    <input class="chooseTime chooseTimeBegin" type="text" value="09:00">-
+                    <input class="chooseTime chooseTimeEnd" type="text" value="10:00">
+
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
         <button href="javascript:void(0);" class="addTime sui-btn btn-xlarge btn-primary">继续添加</button>
         <button href="javascript:void(0);" class="next sui-btn btn-xlarge btn-success">下一步</button>
-</div>
+    </div>
 
 
-<!--有排课记录-->
-<div class="table-box sui-row-fluid" style="display: none">
+    <!--有排课记录-->
+    <div class="table-box sui-row-fluid" style="display: none">
 
-<table class="sui-table">
-<thead>
-<tr class="weekDayNames">
-<th rowspan="2" style="background: #D7D7D7;">时间</th>
-<th colspan="5">星期一(12.31)</th>
-<th colspan="5">星期二(01.01)</th>
-<th colspan="5">星期三(01.02)</th>
-<th colspan="5">星期四(01.03)</th>
-<th colspan="5">星期五(01.04)</th>
-<th colspan="5">星期六(01.05)</th>
-<th colspan="5">星期日(01.06)</th>
-</tr>
-<tr class="classNum">
-<td>教室1</td>
-<td>教室11</td>
-<td>教室111</td>
-<td>教室11111</td>
-<td>教室111111</td>
+        <table class="sui-table">
+            <thead>
+            <tr class="weekDayNames">
+                <th rowspan="2" style="background: #D7D7D7;">时间</th>
+                <th colspan="5" data-date="2018-01-07">星期一(12.31)</th>
+                <th colspan="5" data-date="2018-01-08">星期二(01.01)</th>
+                <th colspan="5" data-date="2018-01-09">星期三(01.02)</th>
+                <th colspan="5" data-date="2018-01-10">星期四(01.03)</th>
+                <th colspan="5" data-date="2018-01-11">星期五(01.04)</th>
+                <th colspan="5" data-date="2018-01-12">星期六(01.05)</th>
+                <th colspan="5" data-date="2018-01-13">星期日(01.06)</th>
+            </tr>
+            <tr class="classNum">
+                <td>教室1</td>
+                <td>教室11</td>
+                <td>教室111</td>
+                <td>教室11111</td>
+                <td>教室111111</td>
 
-<td>教室2</td>
-<td>教室22</td>
-<td>教室222</td>
-<td>教室2222</td>
-<td>教室22222</td>
+                <td>教室2</td>
+                <td>教室22</td>
+                <td>教室222</td>
+                <td>教室2222</td>
+                <td>教室22222</td>
 
-<td>教室3</td>
-<td>教室33</td>
-<td>教室333</td>
-<td>教室3333</td>
-<td>教室33333</td>
+                <td>教室3</td>
+                <td>教室33</td>
+                <td>教室333</td>
+                <td>教室3333</td>
+                <td>教室33333</td>
 
-<td>教室4</td>
-<td>教室44</td>
-<td>教室444</td>
-<td>教室4444</td>
-<td>教室44444</td>
-
-
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-<td>教室2</td>
-
-</tr>
-
-</thead>
-<tbody>
-<tr>
-<td>08:00-09:00</td>
-<!--<td>-->
-<!--<span>多元智能课程</span>-->
-<!--<span>23人</span>-->
-<!--</td>-->
-<td>
-多元智能 2人
-</td>
-<td>
-
-</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
+                <td>教室4</td>
+                <td>教室44</td>
+                <td>教室444</td>
+                <td>教室4444</td>
+                <td>教室44444</td>
 
 
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
+                <td>教室2</td>
 
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-</tr>
-<tr>
-<td>09:00-10:00</td>
-<td>1.0</td>
-<td>1.0</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>1.0</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>10:00-11:00</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<!---->
+            </tr>
 
-<!--弹出层-->
-<div class="mask-layer">
-    <h3>创建排课</h3>
-    <ul>
-        <li>
-            <h4>教室名称:</h4>
-            <span class="sui-dropdown dropdown-bordered select">
+            </thead>
+            <tbody>
+            <tr>
+                <td>08:00-09:00</td>
+                <!--<td>-->
+                <!--<span>多元智能课程</span>-->
+                <!--<span>23人</span>-->
+                <!--</td>-->
+                <td>
+                    多元智能 2人
+                </td>
+                <td>
+
+                </td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+
+
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>09:00-10:00</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1.0</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:00-11:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!---->
+
+    <!--弹出层-->
+    <div class="mask-layer">
+        <h3>创建排课</h3>
+        <ul>
+            <li>
+                <h4>教室名称:</h4>
+                <span class="sui-dropdown dropdown-bordered select">
                 <span class="dropdown-inner">
                 <a id="selectClass" role="button" href="javascript:void(0);" data-toggle="dropdown"
                    class="dropdown-toggle"><input value="" name="" type="hidden"><i
@@ -359,190 +358,199 @@
     </ul></span>
             </span>
 
-        </li>
-        <li>
-            <h4>课程名称:</h4>
-            <span class="sui-dropdown dropdown-bordered select"><span class="dropdown-inner"><a id="selectCourse"
-                                                                                                role="button"
-                                                                                                href="javascript:void(0);"
-                                                                                                data-toggle="dropdown"
-                                                                                                class="dropdown-toggle">
+            </li>
+            <li>
+                <h4>课程名称:</h4>
+                <span class="sui-dropdown dropdown-bordered select"><span class="dropdown-inner"><a id="selectCourse"
+                                                                                                    role="button"
+                                                                                                    href="javascript:void(0);"
+                                                                                                    data-toggle="dropdown"
+                                                                                                    class="dropdown-toggle">
       <input value="" name="" type="hidden"><i class="caret"></i><span>请选择</span></a>
     <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
       <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="class01">课程1</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="class02">课程2</a></li>
     </ul></span></span>
-        </li>
-        <li>
+            </li>
+            <li>
 
-            <h4>教师名称:</h4>
+                <h4>教师名称:</h4>
 
-            <span class="sui-dropdown dropdown-bordered select"><span class="dropdown-inner"><a id="selectTeacher"
-                                                                                                role="button"
-                                                                                                href="javascript:void(0);"
-                                                                                                data-toggle="dropdown"
-                                                                                                class="dropdown-toggle">
+                <span class="sui-dropdown dropdown-bordered select"><span class="dropdown-inner"><a id="selectTeacher"
+                                                                                                    role="button"
+                                                                                                    href="javascript:void(0);"
+                                                                                                    data-toggle="dropdown"
+                                                                                                    class="dropdown-toggle">
       <input value="" name="" type="hidden"><i class="caret"></i><span>请选择</span></a>
     <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
       <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="class01">教师1</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="class02">教师2</a></li>
     </ul></span></span>
 
-        </li>
-    </ul>
-    <h3>选择学员</h3>
-    <div class="stuLists-box">
+            </li>
+        </ul>
+        <h3>选择学员</h3>
+        <div class="stuLists-box">
 
-        <table class="sui-table table-bordered-simple">
-            <thead>
-            <tr>
-                <th>家长</th>
-                <th>手机</th>
-                <th>学员</th>
-                <th>性别</th>
-                <th>年龄</th>
-            </tr>
-            </thead>
-            <tbody>
+            <table class="sui-table table-bordered-simple">
+                <thead>
+                <tr>
+                    <th>家长</th>
+                    <th>手机</th>
+                    <th>学员</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                </tr>
+                </thead>
+                <tbody>
 
 
-            <tr>
-                <td>
-                    <label class="checkbox-pretty inline ">
-                        <input type="checkbox">
-                        <span>张某某</span>
-                    </label>
-                </td>
-                <td>12345678901</td>
-                <td>999</td>
-                <td>男</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>
-                    <label class="checkbox-pretty inline ">
-                        <input type="checkbox">
-                        <span>张某某</span>
-                    </label>
-                </td>
-                <td>待付款</td>
-                <td>9999.00</td>
-                <td>999</td>
-                <td>99999.00</td>
-            </tr>
-            <tr>
-                <td>
-                    <label class="checkbox-pretty inline ">
-                        <input type="checkbox">
-                        <span>张某某</span>
-                    </label>
-                </td>
-                <td>已发货</td>
-                <td>9999.00</td>
-                <td>999</td>
-                <td>99999.00</td>
-            </tr>
-            <tr>
-                <td>
-                    <label class="checkbox-pretty inline ">
-                        <input type="checkbox">
-                        <span>张某某</span>
-                    </label>
-                </td>
-                <td>已成功</td>
-                <td>9999.00</td>
-                <td>999</td>
-                <td>99999.00</td>
-            </tr>
-            </tbody>
-        </table>
+                <tr>
+                    <td>
+                        <label class="checkbox-pretty inline ">
+                            <input type="checkbox">
+                            <span>张某某</span>
+                        </label>
+                    </td>
+                    <td>12345678901</td>
+                    <td>999</td>
+                    <td>男</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-pretty inline ">
+                            <input type="checkbox">
+                            <span>张某某</span>
+                        </label>
+                    </td>
+                    <td>待付款</td>
+                    <td>9999.00</td>
+                    <td>999</td>
+                    <td>99999.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-pretty inline ">
+                            <input type="checkbox">
+                            <span>张某某</span>
+                        </label>
+                    </td>
+                    <td>已发货</td>
+                    <td>9999.00</td>
+                    <td>999</td>
+                    <td>99999.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-pretty inline ">
+                            <input type="checkbox">
+                            <span>张某某</span>
+                        </label>
+                    </td>
+                    <td>已成功</td>
+                    <td>9999.00</td>
+                    <td>999</td>
+                    <td>99999.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-box">
+            <a href="javascript:void(0);" class="sui-btn btn-xlarge">重置</a>
+            <a href="javascript:void(0);" class="sui-btn btn-xlarge btn-primary">确定</a>
+        </div>
     </div>
-    <div class="btn-box">
-        <a href="javascript:void(0);" class="sui-btn btn-xlarge">重置</a>
-        <a href="javascript:void(0);" class="sui-btn btn-xlarge btn-primary">确定</a>
+    <div class="mask-layer-edit">
+        <h3>排课信息</h3>
+        <ul>
+            <li>
+                <h4>教室名称:123</h4>
+
+
+            </li>
+            <li>
+                <h4>课程名称:123</h4>
+
+            </li>
+            <li>
+
+                <h4>教师名称:123</h4>
+
+            </li>
+        </ul>
+        <h3>学员信息</h3>
+        <div class="stuLists-box">
+
+            <table class="sui-table table-bordered-simple">
+                <thead>
+                <tr>
+                    <th>家长</th>
+                    <th>手机</th>
+                    <th>学员</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+                <tr>
+                    <td>张某某</td>
+                    <td>12345678901</td>
+                    <td>999</td>
+                    <td>男</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>张某某</td>
+                    <td>12345678901</td>
+                    <td>999</td>
+                    <td>男</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>张某某</td>
+                    <td>12345678901</td>
+                    <td>999</td>
+                    <td>男</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>张某某</td>
+                    <td>12345678901</td>
+                    <td>999</td>
+                    <td>男</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>张某某</td>
+                    <td>12345678901</td>
+                    <td>999</td>
+                    <td>男</td>
+                    <td>3</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
-<div class="mask-layer-edit">
-    <h3>排课信息</h3>
-    <ul>
-        <li>
-            <h4>教室名称:123</h4>
-
-
-        </li>
-        <li>
-            <h4>课程名称:123</h4>
-
-        </li>
-        <li>
-
-            <h4>教师名称:123</h4>
-
-        </li>
-    </ul>
-    <h3>学员信息</h3>
-    <div class="stuLists-box">
-
-        <table class="sui-table table-bordered-simple">
-            <thead>
-            <tr>
-                <th>家长</th>
-                <th>手机</th>
-                <th>学员</th>
-                <th>性别</th>
-                <th>年龄</th>
-            </tr>
-            </thead>
-            <tbody>
-
-
-            <tr>
-                <td>张某某</td>
-                <td>12345678901</td>
-                <td>999</td>
-                <td>男</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>张某某</td>
-                <td>12345678901</td>
-                <td>999</td>
-                <td>男</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>张某某</td>
-                <td>12345678901</td>
-                <td>999</td>
-                <td>男</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>张某某</td>
-                <td>12345678901</td>
-                <td>999</td>
-                <td>男</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>张某某</td>
-                <td>12345678901</td>
-                <td>999</td>
-                <td>男</td>
-                <td>3</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-<!---->
+    <!---->
 
 </div>
+</body>
+
 
 <script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
 <script type="text/javascript" src="../src/js/weekCourse.js"></script>
 <script>
+
+    (function () {
+        //逻辑代码
+        getWeekDate()
+
+    })()
+
     $(document).ready(function () {
         /*单击单元格 弹出选择层*/
         $('.table-box tbody td').on('click', function (e) {
@@ -558,6 +566,20 @@
                 var num = $(this).parent("tr").children("td").index($(this));
                 var cassName = $(".classNum").children("td").eq(num - 1).html();
                 var time = $(this).parent("tr").children("td:first-child").html();
+
+
+                var dateTimenum = Math.ceil(($(this).parent("tr").children("td").index($(this))
+                    )
+                );
+
+                var dateTime = $(".weekDayNames").children("th").eq(dateTimenum).data("date");
+
+
+                console.log(dateTime);
+
+
+                console.log(dateTimenum);
+
 
                 console.log(time);
                 console.log(cassName);
@@ -589,36 +611,30 @@
                 }
             }
         })
+        $('.chooseTime').timepicker();
+
+        deleteTr()
+        checkTime("timeboxid_1", $('.box tr td:first-child'));
     })
-    $('.chooseTime').timepicker();
 
 
     /*继续添加     添加y轴时间*/
-    $('.addTime').on('click',function (e) {
-
-        $('.box ').append(' <tr><td> <i class="delete-time sui-icon icon-tb-close"></i><input class="chooseTime" type="text" value="09:00">- <input class="chooseTime" type="text" value="10:00"> </td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>')
+    timeBoxId = 1;
+    $('.addTime').on('click', function (e) {
+        timeBoxId = timeBoxId + 1;
+        $('.box ').append(' <tr   id="timeboxid_' + timeBoxId + '"><td  > <i class="delete-time sui-icon icon-tb-close"></i><input class="chooseTime chooseTimeBegin " type="text" value="09:00">- <input class="chooseTime chooseTimeEnd" type="text" value="10:00"> </td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>')
         $('.chooseTime').timepicker();
         /*删除操作*/
-        $('.delete-time').on('click',function (e) {
-            console.log( $(this).parents("tr").remove())
+        deleteTr();
+
+        $.each($('.box tr td:first-child'), function (index, content) {
+            var par = $(this);
+            var timeboxid = $(this).parent("tr").attr("id");
+            checkTime(timeboxid, par)
         })
 
     })
 
-    /*下一步操作*/
-    $('.next').on('click',function (e) {
-        console.log( $(this).parents("tr").remove())
-
-        $('.table-box-empty').remove()
-        $('.table-box').show()
-    })
-
-
-    
-    /*删除操作*/
-    $('.delete-time').on('click',function (e) {
-       console.log( $(this).parents("tr").remove())
-    })
 
 </script>
 </body>

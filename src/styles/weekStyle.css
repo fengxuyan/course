@@ -37,6 +37,7 @@ thead {
   overflow-y: scroll; }
 
 .mask-layer, .mask-layer-edit {
+  height: 520px;
   display: none;
   position: absolute;
   right: 0;
@@ -54,10 +55,11 @@ thead {
   .mask-layer .btn-box, .mask-layer-edit .btn-box {
     text-align: center; }
 
-.chooseTime {
-  width: 30px;
+.chooseTime, .chooseTimeBegin, .chooseTimeEnd {
   border: 0;
-  margin: 0 4px; }
+  margin: 0 10px;
+  text-align: center;
+  display: flex; }
 
 .box tr .delete-time {
   position: relative;
@@ -65,7 +67,6 @@ thead {
   /* top: -6px; */
   width: 5px;
   height: 5px;
-  background: #fff;
   display: flex;
   align-items: center;
   float: right; }

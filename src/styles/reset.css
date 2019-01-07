@@ -54,3 +54,6 @@ ol, ul {
 
 }
 
+.icon-tb-close:before {
+    cursor: pointer;
+}
