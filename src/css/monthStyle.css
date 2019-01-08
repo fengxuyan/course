@@ -12,14 +12,6 @@ tbody tr, tbody td {
   border: 1px solid #ddd;
   height: 150px; }
 
-.day {
-  vertical-align: baseline;
-  /* width: 50px; */
-  padding-left: 10px; }
-
-.datepicker td {
-  text-align: left; }
-
 .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
   background-color: #fff; }
 
@@ -34,5 +26,22 @@ tbody tr, tbody td {
 
 .datepicker-switch {
   text-align: center; }
+
+.main-month {
+  margin: 20px;
+  overflow: hidden; }
+  .main-month .prev {
+    position: relative; }
+    .main-month .prev b {
+      position: absolute;
+      right: 0;
+      top: 10px; }
+  .main-month .datepicker .week-content .dow {
+    border-right: 1px solid #e5e5e5; }
+  .main-month .day {
+    vertical-align: baseline;
+    /* width: 50px; */
+    padding-left: 10px;
+    text-align: left; }
 
 /*# sourceMappingURL=monthStyle.css.map */

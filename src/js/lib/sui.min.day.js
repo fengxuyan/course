@@ -697,7 +697,7 @@
                         var c = '<th class="cw">&nbsp;</th>';
                         b += c, this.picker.find(".datepicker-days thead tr:first-child").prepend(c)
                     }
-                    for (; a < this.o.weekStart + 7;) b += '<th class="dow">' + o[this.o.language].days[a++ % 7] + "</th>";
+                    for (; a < this.o.weekStart + 7;) b += '<th class="dow">' + o[this.o.language].daysMin[a++ % 7] + "</th>";
                     b += "</tr>", this.picker.find(".datepicker-days thead").append(b)
                 }, fillMonths: function () {
                     for (var a = "", b = 0; 12 > b;) a += '<span class="month">' + o[this.o.language].monthsShort[b++] + "</span>";

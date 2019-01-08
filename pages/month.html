@@ -12,70 +12,34 @@
     <link href="../src/css/monthStyle.css" rel="stylesheet">
 </head>
 <body>
-
-<div id="demo3"></div>
-<!--<div class="calender-box">-->
-
-
-    <!--<table class="sui-table table-bordered">-->
-        <!--<thead>-->
-        <!--<tr>-->
-            <!--<th>星期日</th>-->
-            <!--<th>星期一</th>-->
-            <!--<th>星期二</th>-->
-            <!--<th>星期三</th>-->
-            <!--<th>星期四</th>-->
-            <!--<th>星期五</th>-->
-        <!--</tr>-->
-        <!--</thead>-->
-        <!--<tbody>-->
-        <!--<tr>-->
-            <!--<td>-->
-                <!--<span>1</span>-->
-                <!--<ul>-->
-                    <!--<li>1</li>-->
-                    <!--<li>1</li>-->
-                    <!--<li>1</li>-->
-
-
-                <!--</ul>-->
-
-
-            <!--</td>-->
-            <!--<td>9999.00</td>-->
-            <!--<td>999</td>-->
-            <!--<td>99999.00</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td>待付款</td>-->
-            <!--<td>9999.00</td>-->
-            <!--<td>999</td>-->
-            <!--<td>99999.00</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td>已发货</td>-->
-            <!--<td>9999.00</td>-->
-            <!--<td>999</td>-->
-            <!--<td>99999.00</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td>已成功</td>-->
-            <!--<td>9999.00</td>-->
-            <!--<td>999</td>-->
-            <!--<td>99999.00</td>-->
-        <!--</tr>-->
-        <!--</tbody>-->
-    <!--</table>-->
-<!--</div>-->
-
+<div class="main-month">
+    <div id="demo3"></div>
+</div>
 <script type="text/javascript" src="../src/js/lib/jquery.min.js"></script>
-<!--<script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>-->
 <script type="text/javascript" src="../src/js/lib/sui.min.js"></script>
 
 <script>
 
 
     $('#demo3').datepicker({});
+
+    $(document).ready(function () {
+        deleteCalenderSpace()
+    })
+
+
+    /*删除日历空行*/
+    function deleteCalenderSpace() {
+        if($("tr").children(".old").length==7){
+            $(".old").parent("tr").remove()
+
+        }else if($("tr").children(".new").length>7){
+            $($(".new:last-child").parent("tr"))[1].remove()
+        }else if($("tr").children(".new").length==7){
+            $(".new").parent("tr").remove()
+        }
+    }
+
 </script>
 </body>
 </html>

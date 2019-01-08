@@ -1,10 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>排课系统</title>
+    <link href="../src/css/sui.min.css" rel="stylesheet">
+    <link href="../src/css/sui-append.min.css" rel="stylesheet">
+
+    <link href="../src/css/reset.css" rel="stylesheet">
+    <link href="../src/css/dayStyle.css" rel="stylesheet">
 </head>
 <body>
 
+<div class="main-day">
+
+    <div class="left-calender">
+
+        <div id="calender"></div>
+
+    </div>
+    <div class="right-content">
+
+        <!--有排课记录-->
+        <div class="table-box sui-row-fluid">
+
+            <table class="sui-table table-zebra">
+                <thead>
+                <tr class="weekDayNames">
+                    <th rowspan="2" style="background: #fff;">时间</th>
+                    <th colspan="7" data-date="2018-01-07">星期一(12.31)</th>
+                </tr>
+                <tr class="classNum">
+                    <td>教室1</td>
+                    <td>教室11</td>
+                    <td>教室111</td>
+                    <td>教室11111</td>
+                    <td>教室111111</td>
+
+                    <td>教室2</td>
+                    <td>教室22</td>
+
+
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td>08:00-09:00</td>
+                    <td>
+                        多元智能 2人
+                    </td>
+                    <td>
+                    <td>1.0</td>
+                    <td>1.0</td>
+
+                    <td>1.0</td>
+                    <td>1.0</td>
+
+
+                    <td>1.0</td>
+                </tr>
+                <tr>
+                    <td>09:00-10:00</td>
+                    <td>1.0</td>
+                    <td>1.0</td>
+
+
+                    <td></td>
+
+                    <td>1.0</td>
+                    <td>1.0</td>
+                    <td>1.0</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>10:00-11:00</td>
+                    <td></td>
+                    <td>1.0</td>
+                    <td>1.0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!---->
+
+    </div>
+
+</div>
+<script type="text/javascript" src="../src/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="../src/js/lib/sui.min.day.js"></script>
+
+<script>
+    $('#calender').datepicker({});
+</script>
 </body>
 </html>
