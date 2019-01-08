@@ -1,0 +1,35 @@
+.main-day {
+  margin: 10px;
+  height: 800px;
+  border: 1px solid yellowgreen; }
+  .main-day .left-calender {
+    display: inline-block;
+    border: 1px solid gray; }
+    .main-day .left-calender .datepicker table tr td.old, .main-day .left-calender .datepicker table tr td.new {
+      visibility: hidden; }
+  .main-day .table-box table, .main-day .table-box-empty table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .main-day .table-box table thead tr th, .main-day .table-box-empty table thead tr th {
+    color: #333;
+    font-weight: normal;
+    font-weight: bold;
+    background-color: #fff; }
+  .main-day .table-box table td, .main-day .table-box table th, .main-day .table-box-empty table td, .main-day .table-box-empty table th {
+    color: #333;
+    font-weight: normal;
+    height: 20px;
+    border: 1px solid #A6A6A6;
+    text-align: center; }
+  .main-day .table-box table td span, .main-day .table-box-empty table td span {
+    display: block;
+    padding: 5px 0; }
+  .main-day .right-content {
+    display: inline-block;
+    width: 900px; }
+    .main-day .right-content thead {
+      border-top: 1px solid grey; }
+    .main-day .right-content .sui-table thead:first-child tr:first-child th {
+      background-color: #f9f9f9; }
+
+/*# sourceMappingURL=dayStyle.css.map */
