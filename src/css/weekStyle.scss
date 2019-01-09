@@ -1,6 +1,7 @@
 
 .main_week {
   padding: 10px;
+  background-color: #fff;
 }
 .table-box table, .table-box-empty table {
   border-collapse: collapse;
@@ -111,4 +112,8 @@ thead {
 h4 {
   display: inline-block;
   padding-right: 10px;
+}
+
+.navbar-inverse .sui-nav .active > a {
+  background-color: #fff;
 }

@@ -10,13 +10,41 @@
 
     <link href="../src/css/reset.css" rel="stylesheet">
     <link href="../src/css/dayStyle.css" rel="stylesheet">
+
+    <style>
+        .todayText {
+            text-align: center;
+            font-size: 75px;
+            font-weight: normal;
+            color: #46626A;
+            margin-bottom: 50px;s
+        }
+        .main-day {
+            width: 1100px;
+        }
+        .main-day .left-calender {
+            float: left;
+        }
+
+        .main-day .right-content {
+            width: 770px;
+            margin-left: 10px;
+        }
+        .dateText {
+            display: inline-block;
+            padding-left: 20px;
+        }
+    </style>
 </head>
-<body>
+<body onload="startTime()">
 
 <div class="main-day">
 
     <div class="left-calender">
 
+        <h1 class="todayText"></h1>
+
+        <div ><span class="dateText"></span><span id="nowTime"></span></div>
         <div id="calender"></div>
 
     </div>
@@ -98,6 +126,38 @@
 
 <script>
     $('#calender').datepicker({});
+    var myDate = new Date();
+    myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+    myDate.getMonth();       //获取当前月份(0-11,0代表1月)
+    myDate.getDate();        //获取当前日(1-31)
+    myDate.getDay();         //获取当前星期X(0-6,0代表星期天)
+
+
+    var  weeks = ['日','一','二','三','四','五','六'];
+
+    $(".todayText").text( myDate.getDate());
+    $(".dateText").text( myDate.getFullYear()+"年"+ myDate.getMonth()+1+"月"+myDate.getDay()+"日"+"  "+"星期"+ weeks[myDate.getDay()]);
+
+
+    function startTime()
+    {
+        var today=new Date()
+        var h=today.getHours()
+        var m=today.getMinutes()
+        var s=today.getSeconds()
+// add a zero in front of numbers<10
+        m=checkTime(m)
+        s=checkTime(s)
+        document.getElementById('nowTime').innerHTML=h+":"+m+":"+s
+        t=setTimeout('startTime()',500)
+    }
+
+    function checkTime(i)
+    {
+        if (i<10)
+        {i="0" + i}
+        return i
+    }
 </script>
 </body>
 </html>
